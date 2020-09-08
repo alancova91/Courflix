@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    max-width: 320px;
+    height: auto;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.801218);
+    display: flex;
+    align-items: center;
+    padding: 12px 60px;
+    position: fixed;
+    max-width: 320px;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    @media screen (min-width:321px) and (max-width:767px) {
+        background-color: rgba(0, 0, 0, 0.801218);
+        display: flex;
+        align-items: center;
+        padding: 12px 60px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    
+    .logo-wrapper {
+      
+        flex-shrink: 0;
+    
+        .logo {
+            display: block;
+            width: 100%;
+            margin: 0 auto;            
+        }
+    }
+
+    .links-wrapper {
+        
+        display: none;
+
+        @media screen (min-width:321px) and (max-width:767) {  
+                margin-right: 85px;
+                width: 150px;
+                flex-shrink: 0;
+            }
+            
+                .logo {
+                    display: block;
+                    width: 100%;            
+                }
+            }
+        }
+            
+        }
+    }
+   
+}
+
+.main-content {
+    
+    .cover-wrapper {
+        background-image: url("../images/arrow-background-4.jpg");
+        background-position: center;                
+        background-size: cover;
+         
+
+        .cover-content-wrapper {
+            color: #fff;
+            padding: 120px 0 0 12px;
+            max-width: 740px;
+            height: auto;
+            min-height: 220px;
+            display: flex;
+            flex-direction: column;
+
+            .logo-arrow {
+                display: none;              
+            }
+
+            .content-title {
+                color: white;
+                font-size: 1.5rem;
+                font-weight: bold;
+                line-height: 30px;
+            }
+
+            .series-info {
+                display: flex;
+
+                .info {
+                    font-size: 1rem;
+                    margin-right: 10px;
+
+                    &:first-of-type {
+                    display: none;
+                    }
+
+                }
+            }
+
+            .button-wrapper {
+                display: flex;
+                padding: 15px 0 35px 0;               
+
+                .action {
+                    background-color: rgba(157, 151, 151, 0.541521); 
+                    padding: 13px 20px;
+                    border-radius: 9px;
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1.2rem;                   
+                    line-height: 20px;
+                    font-weight: 400;
+                }
+
+                .action:first-of-type{
+                    background-color: #ED0A1D;
+                }
+
+                
+                .action:nth-child(2) {
+                    display: none;
+                }
+
+                .like-button {
+                    display: none;
+                }
+                
+            }
+
+            .content-description {
+                display: none;
+            }
+
+        }
+        
+    }
+
+    .episode-wrapper {
+        background-color: black;
+        color: white;        
+
+        .catalog {
+            padding: 0px 22px 20px 12px;
+
+            .catalog-season {
+                font-size: 1.2rem;
+                font-weight: bold;
+                padding: 20px 0 25px;
+                
+            }
+
+            .catalog-content-wrapper {
+                display: flex;   
+                max-width: 320px;
+
+                .catalog-content {
+                    
+                    max-width: 300px;
+
+                    .cover-image {
+                        display: block;
+                        width: 130px;
+                        height: 75px;
+                        margin-right: 10px;
+                    }                   
+                }
+
+                .ep-content {
+
+                
+                    .ep-title {
+                        font-size: 1.2rem;                      
+                        margin-bottom: 10px;
+                    }
+
+                    .ep-plot {
+                        line-height: 25px;
+                        font-size: 1rem;  
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+}
+
+/*body {
+    font-family: "Open Sans", sans-serif;
+    max-width: 320px;
+    height: auto;
+}
+
+
+.header {
+    background-color: rgba(0, 0, 0, 0.801218);
+    display: flex;
+    align-items: center;
+    padding: 12px 60px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    .logo-wrapper {
+        margin-right: 85px;
+        width: 150px;
+        flex-shrink: 0;
+    
+        .logo {
+            display: block;
+            width: 100%;            
+        }
+    }
+
+    .links-wrapper {
+            
+        .link {
+            text-decoration: none;
+            color: white;    
+            margin-right: 25px;
+            font-weight: 600;
+            font-size: 1.1rem;
+        
+            &:hover {
+                color: gray;
+            }         
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+   
+}
+
+.main-content {
+
+    .cover-wrapper {
+        background-image: url("../images/arrow-background-4.jpg");
+        position: center;                
+        background-size: cover; 
+        
+              
+
+        .cover-content-wrapper {
+            color: #fff;
+            padding: 200px 0 0 60px;
+            max-width: 740px;
+            min-height: 65vh;
+            display: flex;
+            flex-direction: column;
+
+            .logo-arrow {
+                width: 400px;
+                padding-bottom: 15px;
+                
+            }
+
+            .series-info {
+                display: flex;
+                margin-bottom: 45px;
+                
+                .info {
+                    font-size: 1.125rem;
+                    margin-right: 15px;
+                }
+
+            }
+
+            .button-wrapper {
+
+                display: flex;
+                
+                .action {
+
+                    background-color: rgba(157, 151, 151, 0.541521); 
+                    padding: 20px 40px;
+                    border-radius: 9px;
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 1.3rem;
+                    margin: 0 35px 30px 0px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    
+                    &:last-of-type {
+                        padding: 20px 50px;
+                    }
+
+                    &:first-of-type {
+                        background: #ED0A1D;
+                    }
+                    
+                }               
+                    
+                .like-button {
+                    padding: 10px;
+                    border: 2px solid #D8D8D8;
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 30px;
+                    margin-right: 15px;
+                }
+            }
+
+            .content-description {
+                font-size: 1.3rem;
+                padding: 10px 35px 0px 0px;
+                line-height: 30px;
+                margin-right: 50px;
+            }
+
+        }
+
+    }
+
+    .episode-wrapper {
+        background-color: black;
+        color: white;
+
+        .catalog {
+            padding: 35px 0px 32px 60px;
+            margin-left: 0;
+
+            .catalog-season {
+                color: white;
+                font-weight: 600;
+                font-size: 1.3rem;
+                margin: 0px 0px 30px 0;            
+            }            
+            
+            .catalog-content-wrapper {
+                display: flex;
+                max-width: 800px;               
+                
+                .catalog-content {
+                    margin-right: 12px;
+                    min-width: 300px;
+
+                    &:last-of-type {
+                        padding-right: 0px;
+                    }
+
+                    .cover-image {
+                        display: block;
+                        width: 100%;
+                        max-width: 300px;
+                        max-height: 170px;
+                    }                   
+                }
+
+                .ep-content {
+
+                
+                    .ep-title {
+                        font-size: 2rem;
+                        padding-bottom: 20px;
+                    }
+
+                    .ep-plot {
+                        line-height: 25px;
+                        font-size: 1.1rem;                                          
+                    }
+
+                }   
+                
+            }
+
+        }
+
+    }
+            
+}*/
